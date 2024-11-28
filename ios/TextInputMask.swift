@@ -11,10 +11,6 @@ class TextInputMask: NSObject, RCTBridgeModule, MaskedTextFieldDelegateListener 
         true
     }
 
-    var methodQueue: DispatchQueue {
-        bridge.uiManager.methodQueue
-    }
-
     var bridge: RCTBridge!
     var masks: [String: MaskedTextFieldDelegate] = [:]
 
